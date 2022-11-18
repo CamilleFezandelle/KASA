@@ -1,7 +1,13 @@
+// ------------------------------
+// Import des modules nécessaires
+// ------------------------------
 import React from 'react';
-// Import des images :
+// (Images)
 import logoKasaFooter from '../assets/images/kasa-logo-footer.png';
 
+// --------------------
+// Contenu du composant
+// --------------------
 const Footer = () => {
 	return (
 		<footer>

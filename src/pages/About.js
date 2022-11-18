@@ -1,9 +1,17 @@
+// ------------------------------
+// Import des modules nécessaires
+// ------------------------------
 import React from 'react';
-import Dropdown from '../components/Dropdown';
-import Footer from '../components/Footer';
+// (Composants)
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Dropdown from '../components/Dropdown';
 
+// --------------------
+// Contenu du composant
+// --------------------
 const About = () => {
+	// (Contenu des dropdown de la page)
 	const dropdownText = [
 		{
 			title: 'Fiabilité',
@@ -27,6 +35,7 @@ const About = () => {
 		},
 	];
 
+	// (Titre de la page)
 	document.title = 'Kasa | A propos';
 
 	return (
@@ -35,8 +44,10 @@ const About = () => {
 			<main>
 				<section className="about-illustration"></section>
 				<section className="about-dropdown">
+					{/* (Mappage des dropdown) */}
 					{dropdownText.map((dropdown, index) => (
 						<div className="about-dropdown__container" key={index}>
+							{/* (Appel des composants 'Dropdown') */}
 							<Dropdown title={dropdown.title} description={dropdown.description} page="about" />
 						</div>
 					))}

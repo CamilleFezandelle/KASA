@@ -1,10 +1,19 @@
+// ------------------------------
+// Import des modules nécessaires
+// ------------------------------
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+// (API)
 import Logements from '../api.json';
+// (Composants)
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
+// --------------------
+// Contenu du composant
+// --------------------
 const Home = () => {
+	// (Titre de la page)
 	document.title = 'Kasa | Accueil';
 
 	return (
@@ -20,6 +29,7 @@ const Home = () => {
 					</h1>
 				</section>
 				<section className="home-gallery">
+					{/* (Mappage des cards 'Logement') */}
 					{Logements.map((logement) => (
 						<Link to={`/logement/${logement.id}`} className="home-card" key={logement.id}>
 							<img src={logement.cover} alt={`${logement.title}`} className="home-card__img" />

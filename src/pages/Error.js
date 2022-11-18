@@ -1,9 +1,17 @@
+// ------------------------------
+// Import des modules nécessaires
+// ------------------------------
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
+// (Composants)
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
+// --------------------
+// Contenu du composant
+// --------------------
 const Error = () => {
+	// (Titre de la page)
 	document.title = 'Kasa | Erreur';
 
 	return (

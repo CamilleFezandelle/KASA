@@ -1,12 +1,20 @@
+// ------------------------------
+// Import des modules nécessaires
+// ------------------------------
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// Import des images :
+// (Images)
 import logoKasa from '../assets/images/kasa-logo.png';
 
+// --------------------
+// Contenu du composant
+// --------------------
 const Header = () => {
 	return (
 		<header>
+			{/* Logo */}
 			<img src={logoKasa} alt="logo du site" />
+			{/* Barre de navigation */}
 			<nav>
 				<ul className="desk-navbar">
 					<li className="desk-navbar__link">
