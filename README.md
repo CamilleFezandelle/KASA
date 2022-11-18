@@ -11,7 +11,7 @@ Création d'une application web de location immobilière avec React
 
 Vous pouvez retrouver ce projet hébergé à ce lien :
 
-https://kasa-f5urn2hwh-camillefezandelle.vercel.app/home
+https://kasa-project-camillefezandelle.vercel.app/home
 
 ### Remarque /!\
 
