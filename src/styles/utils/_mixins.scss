@@ -1,0 +1,26 @@
+// flex center
+@mixin display-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// max width
+@mixin max-width {
+	max-width: $break-tablet;
+	margin: auto;
+}
+
+// responsive tablets
+@mixin resp-tablet {
+	@media screen and (max-width: $break-tablet) {
+		@content;
+	}
+}
+
+// responsive mobile
+@mixin resp-mobile {
+	@media screen and (max-width: $break-mobile) {
+		@content;
+	}
+}

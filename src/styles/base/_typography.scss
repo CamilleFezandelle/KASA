@@ -1,0 +1,20 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+}
+
+main {
+	@include max-width;
+	@include resp-tablet {
+		padding: 0 5%;
+	}
+	@include resp-mobile {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 319px) {
+	body {
+		width: max-content;
+	}
+}

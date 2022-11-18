@@ -1,0 +1,25 @@
+footer {
+	background-color: #000000;
+	height: 209px;
+	padding: 66px 0 29px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	@include resp-mobile {
+		padding: 66px 0 62px 0;
+	}
+	img {
+		width: 122px;
+		height: 39.44px;
+	}
+	p {
+		color: #ffffff;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 34px;
+		@include resp-mobile {
+			font-size: 12px;
+		}
+	}
+}
