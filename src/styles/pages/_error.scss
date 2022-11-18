@@ -1,0 +1,51 @@
+.errorpage-error {
+	@include display-center;
+	flex-direction: column;
+	margin: 169px 0 159px 0;
+	@include resp-mobile {
+		margin: 195px 0 235px 0;
+	}
+	&__title {
+		color: $color-primary;
+		font-weight: 700;
+		font-size: 288px;
+		@include resp-mobile {
+			font-size: 96px;
+		}
+	}
+	&__desk-subtitle {
+		color: $color-primary;
+		font-weight: 500;
+		font-size: 36px;
+		margin: 66px 0 182px 0;
+		@include resp-tablet {
+			text-align: center;
+			font-size: 34px;
+		}
+		@include resp-mobile {
+			display: none;
+		}
+	}
+	&__mobile-subtitle {
+		display: none;
+		@include resp-mobile {
+			display: block;
+			margin: 11px 0 133px 0;
+			width: 260px;
+			color: $color-primary;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 142.6%;
+		}
+	}
+	&__returnhome {
+		color: $color-primary;
+		font-weight: 500;
+		font-size: 18px;
+		text-decoration-line: underline;
+		@include resp-mobile {
+			font-size: 14px;
+		}
+	}
+}
