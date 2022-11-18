@@ -12,3 +12,9 @@ Création d'une application web de location immobilière avec React
 Vous pouvez retrouver ce projet hébergé à ce lien :
 
 https://kasa-f5urn2hwh-camillefezandelle.vercel.app/home
+
+### Remarque /!\
+
+Tous les commits ont été effectué la même journée, car je n'avais pas fait attention dans la consigne qu'il fallait le réaliser sur GitHub.
+
+Je l'ai donc mis sur GitHub après l'avoir fini.
