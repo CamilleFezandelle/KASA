@@ -19,6 +19,8 @@ const Logement = () => {
 
 	let logementInformation = Logements.filter((logement) => idLogement === logement.id)[0];
 
+	document.title = `Kasa | ${logementInformation.title}`;
+
 	return (
 		<div className="app">
 			<Header />

@@ -27,6 +27,8 @@ const About = () => {
 		},
 	];
 
+	document.title = 'Kasa | A propos';
+
 	return (
 		<div className="app">
 			<Header />

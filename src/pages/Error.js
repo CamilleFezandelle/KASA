@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const Error = () => {
+	document.title = 'Kasa | Erreur';
+
 	return (
 		<div className="app">
 			<Header />

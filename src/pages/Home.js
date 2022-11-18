@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import Logements from '../api.json';
 
 const Home = () => {
+	document.title = 'Kasa | Accueil';
+
 	return (
 		<div className="app">
 			<Header />
