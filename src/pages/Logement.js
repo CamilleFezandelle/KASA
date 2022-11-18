@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Error from './Error';
+import Carousel from '../components/Carousel';
 import Stars from '../components/Stars';
 import Dropdown from '../components/Dropdown';
 import Logements from '../api.json';
@@ -22,7 +23,9 @@ const Logement = () => {
 		<div className="app">
 			<Header />
 			<main>
-				<section className="logement-carousel"></section>
+				<section className="logement-carousel">
+					<Carousel imgUrl={logementInformation.pictures} />
+				</section>
 				<section className="logement-description">
 					<div className="logement-description__main">
 						<div className="logement-description__title">
