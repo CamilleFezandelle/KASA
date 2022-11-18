@@ -1,0 +1,33 @@
+.dropdown-close,
+.dropdown-open {
+	button {
+		height: 47px;
+		padding: 0 18px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $color-primary;
+		border-radius: 5px;
+		@include resp-mobile {
+			height: 30px;
+			padding: 0 12px;
+		}
+	}
+	img {
+		@include resp-mobile {
+			width: 19px;
+			height: 19px;
+		}
+	}
+	&__body {
+		background-color: $color-background;
+		z-index: -1;
+		position: relative;
+		margin-top: -9px;
+		p {
+			color: $color-primary;
+			font-weight: 400;
+			line-height: 142.6%;
+		}
+	}
+}

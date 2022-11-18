@@ -1,0 +1,55 @@
+.about-illustration {
+	height: 223px;
+	background: rgba(0, 0, 0, 0.3) url(../../assets/images/about-illustration.png);
+	background-blend-mode: darken;
+	border-radius: 25px;
+	margin-top: 44px;
+	@include resp-mobile {
+		height: 223px;
+		background: rgba(0, 0, 0, 0.3) url(../../assets/images/about-illustration-mobile.png) no-repeat bottom;
+		background-size: cover;
+		border-radius: 10px;
+		margin-top: 17px;
+	}
+}
+
+.about-dropdown {
+	margin-bottom: 150px;
+	@include resp-mobile {
+		margin-bottom: 168px;
+	}
+}
+
+.about-dropdown-close,
+.about-dropdown-open {
+	margin-top: 31px;
+	@include resp-mobile {
+		margin-top: 20px;
+	}
+	button {
+		width: 100%;
+	}
+	h2 {
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 500;
+		@include resp-mobile {
+			font-size: 13px;
+		}
+	}
+	&__body {
+		border-radius: 5px;
+		padding: 36px 18px 19px 18px;
+		@include resp-mobile {
+			padding: 23px 3% 53px 3%;
+		}
+		p {
+			font-size: 24px;
+			@include resp-mobile {
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 142.6%;
+			}
+		}
+	}
+}
